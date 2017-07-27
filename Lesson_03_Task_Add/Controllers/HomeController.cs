@@ -8,23 +8,29 @@ namespace Lesson_03_Task_Add.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Home()
         {
+            ViewBag.Page = "Home";
+            return View();
+        }
+
+        public ActionResult Products()
+        {
+            ViewBag.Page = "Products";
+            return View();
+        }
+
+        public ActionResult Services()
+        {
+            ViewBag.Page = "Services";
             return View();
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Page = "About";
 
             return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+        }        
     }
 }
