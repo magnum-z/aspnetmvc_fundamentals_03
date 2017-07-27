@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Lesson_03_Task_1.Models.Product>
+
+<div>
+    <h3>List</h3>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@item.ID. @item.Name - @item.Price$ (@item.CreateDate)</li>
+        }
+    </ul>    
+</div>

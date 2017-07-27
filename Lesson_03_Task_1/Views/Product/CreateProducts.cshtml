@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Lesson_03_Task_1.Models.Product>
+
+@{
+    ViewBag.Title = "CreateProducts";
+}
+
+<h2>CreateProducts</h2>
+<br />
+@Html.Partial("_ProductsList", Model)
+<br />
+<br />
+@Html.Partial("_ProductsTable", Model)
+<br />

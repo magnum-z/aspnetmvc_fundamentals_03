@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Lesson_03_Task_1.Models.Product>
+
+<div>
+    <h3>Table</h3>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>CreateDate</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Name</td>
+                <td>$ @item.Price</td>
+                <td>@item.CreateDate</td>
+            </tr>
+        }
+    </table>
+</div>
+
